@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+nav {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(7, 106, 126) 100%
+  );
+  height: 80px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+label.logo {
+  color: white;
+  font-size: 30px;
+  line-height: 80px;
+  padding-right: 110;
+  font-weight: bold;
+}
+
+#logo_name {
+  margin-left: 80px;
+}
+
+#logo {
+  position: absolute;
+  top: 0px;
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+
+a.active,
+a:hover {
+  color: #ffffff;
+  font-weight: 100;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 2, 0.21) 0%,
+    rgba(0, 242, 255, 0.238) 100%
+  );
+  transition: 5s;
+  box-shadow: 1px 1px 1px 1px rgba(2, 2, 92, 0.354);
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 18px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1070px) {
+  .checkbtn {
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgb(5, 5, 5);
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  a:hover,
+  a:active {
+    background: none;
+    color: #0082e6;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+/* fin de la barre de navigation*/
+
+/*section 1*/
+#first_card {
+  animation: bgAnim 60s infinite;
+  background: url(assets/R.jfif);
+  background-size: cover;
+  height: calc(100vh - 40px);
+  padding-top: 80px;
+}
+
+@keyframes bgAnim {
+  0% {
+    background-size: 100%;
+  }
+
+  50% {
+    background-size: 140%;
+  }
+
+  100% {
+    background-size: 100%;
+  }
+}
+
+#card_of_presentation {
+  margin: 160px 60px;
+}
+
+#card_of_presentation h1,
+h2,
+p {
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 8000;
+}
+
+#secend_card {
+  height: 100vh;
+  width: 100%;
+  border-radius: 16px;
+  border-top: 1px solid black;
+  padding: 20px 20px 0 20px;
+}
+
+#secend_card h2 {
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid black;
+  border-radius: 16px;
+  padding: 10px;
+  background: #e6e4e4;
+  width: 400px;
+  margin: 0 auto;
+  margin-top: -44px;
+}
+
+#grille {
+  display: grid;
+  height: auto;
+  width: 100%;
+  display: flex;
+  /*grid-template-columns: repeat(auto-fill, 280px);*/
+  justify-content: space-around;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+/*
+#Prestation_cards div {
+  height: 360px;
+  width: 25%;
+  background: #ffffff;
+  border: 1px solid black;
+  border-radius: 12px;
+  box-shadow: 4px 2px 4px 2px gray;
+  margin-top: 40px;
+}
+*/
+
+.grille_items {
+  margin-top: 2rem;
+  min-height: 300px;
+  height: auto;
+  width: 300px;
+  background-color: #eee;
+  border-radius: 0.5rem;
+  /*border-right: 1px solid black;*/
+  /*border-bottom: 0.5px solid black;*/
+  box-shadow: 2px 4px 2px 4px rgb(185, 181, 181);
+  overflow: hidden;
+  padding: 4px;
+}
+
+.grille_items:hover {
+  padding: 6px;
+}
+
+#grille img {
+  max-width: 310px;
+}
+
+#grille h3 {
+  margin: 4px;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+#grille p {
+  text-align: justify;
+  font-size: 1.2rem;
+  padding: 6px;
+}
+
+#grille button {
+  font-size: 1.2rem;
+  padding: 6px;
+  background: #65b0e9;
+  border: 1px solid gray;
+  border-radius: 5rem;
+  margin: 4px;
+}
+
+#grille button:hover {
+  cursor: pointer;
+  padding: 8px;
+}
+
+#secend_card p {
+  font-size: 1.2rem;
+}
+
+/* Section projet */
+
+#projet {
+  width: 68%;
+  padding: 30px;
+  min-height: 100vh;
+  height: auto;
+  background: gray;
+}
