@@ -168,7 +168,7 @@ p {
 }
 
 #secend_card {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   border-radius: 16px;
   border-top: 1px solid black;
@@ -262,12 +262,9 @@ p {
   font-size: 1.2rem;
 }
 
-/* Section projet */
 
-#projet {
-  width: 68%;
-  padding: 30px;
-  min-height: 100vh;
-  height: auto;
-  background: gray;
+footer{
+  min-height: 30vh;
+  width: 100M;
+  background: url(assets/wave-footer.svg);
 }
