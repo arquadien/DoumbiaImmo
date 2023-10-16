@@ -167,6 +167,49 @@ p {
   font-weight: 8000;
 }
 
+@media (max-width: 792px) {
+  #card_of_presentation {
+    margin: 60px 60px 0px 60px;
+  }
+
+  #first_card {
+    height: auto;
+  }
+}
+
+/*about*/
+.section-container {
+  padding: 60px 0;
+}
+.section-container-spacer {
+  margin-bottom: 10 px;
+}
+.hero-full-container {
+  padding: 20% 0;
+}
+@media (min-width: 992px) {
+  .hero-full-container {
+    padding: 15% 0;
+  }
+}
+.hero-container {
+  padding: 120px 0 60px;
+}
+.white-text-container a,
+.white-text-container h1,
+.white-text-container h2,
+.white-text-container h3,
+.white-text-container h4,
+.white-text-container h5,
+.white-text-container p {
+  color: #fff;
+}
+@media (max-width: 992px) {
+  .address-container {
+    margin-top: 20px;
+  }
+}
+
 #secend_card {
   height: 100vh;
   width: 100%;
