@@ -160,11 +160,10 @@ a:hover {
 }
 
 #card_of_presentation h1,
-h2,
-p {
-  font-size: 2rem;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 8000;
+#card_of_presentation h2,
+#card_of_presentation p {
+  text-align: center;
+  font-size: 35px;
 }
 
 @media (max-width: 792px) {
@@ -179,10 +178,11 @@ p {
 
 /*about*/
 .section-container {
-  padding: 60px 0;
+  padding: 30px 0;
+  padding-bottom:90px ;
 }
 .section-container-spacer {
-  margin-bottom: 10 px;
+  margin-bottom: 10px;
 }
 .hero-full-container {
   padding: 20% 0;
@@ -195,6 +195,7 @@ p {
 .hero-container {
   padding: 120px 0 60px;
 }
+/*
 .white-text-container a,
 .white-text-container h1,
 .white-text-container h2,
@@ -204,6 +205,17 @@ p {
 .white-text-container p {
   color: #fff;
 }
+*/
+.text-center h2{
+  margin: 20px;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.text-center p{
+  width: 100%;
+}
+
 @media (max-width: 992px) {
   .address-container {
     margin-top: 20px;
@@ -211,7 +223,7 @@ p {
 }
 
 #secend_card {
-  min-height: 100vh;
+  height: auto;
   width: 100%;
   border-radius: 16px;
   border-top: 1px solid black;
@@ -241,17 +253,7 @@ p {
   flex-wrap: wrap;
   margin-bottom: 40px;
 }
-/*
-#Prestation_cards div {
-  height: 360px;
-  width: 25%;
-  background: #ffffff;
-  border: 1px solid black;
-  border-radius: 12px;
-  box-shadow: 4px 2px 4px 2px gray;
-  margin-top: 40px;
-}
-*/
+
 
 .grille_items {
   margin-top: 2rem;
@@ -267,6 +269,10 @@ p {
   padding: 4px;
 }
 
+.grille_items p{
+  font-size: 1.6rem;
+}
+
 .grille_items:hover {
   padding: 6px;
 }
@@ -278,13 +284,11 @@ p {
 #grille h3 {
   margin: 4px;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 3rem;
 }
 
-#grille p {
-  text-align: justify;
-  font-size: 1.2rem;
-  padding: 6px;
+.grille_items p {
+  font-size: 52px;
 }
 
 #grille button {
@@ -302,8 +306,10 @@ p {
 }
 
 #secend_card p {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
+
+/* footer*/
 
 
 footer{
@@ -311,3 +317,12 @@ footer{
   width: 100M;
   background: url(assets/wave-footer.svg);
 }
+
+.social_link span{
+  padding: 4px;
+  background: #e6e4e4;
+  border-radius: 50%;
+}
+
+.social_link span{
+ }
