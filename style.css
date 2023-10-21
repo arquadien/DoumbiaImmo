@@ -160,10 +160,17 @@ a:hover {
 }
 
 #card_of_presentation h1,
-#card_of_presentation h2,
 #card_of_presentation p {
   text-align: center;
   font-size: 35px;
+}
+
+#card_of_presentation h1{
+  font-weight: 900;
+  color: #ffffff;
+  font-size: 50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 
 @media (max-width: 792px) {
@@ -195,17 +202,13 @@ a:hover {
 .hero-container {
   padding: 120px 0 60px;
 }
-/*
-.white-text-container a,
-.white-text-container h1,
-.white-text-container h2,
-.white-text-container h3,
-.white-text-container h4,
-.white-text-container h5,
+
+
 .white-text-container p {
+  font-size: 25px;
   color: #fff;
 }
-*/
+
 .text-center h2{
   margin: 20px;
   text-align: center;
@@ -316,7 +319,7 @@ footer{
   min-height: 30vh;
   width: 100;
   background: url(assets/wave-footer.svg);
-  padding: 20px;
+  padding-top: 20px;
 }
 
 
@@ -351,7 +354,8 @@ footer{
  footer section{
   margin: 0 auto;
   width: 300px;
-  margin-bottom: 7%;
+  margin-bottom: 90px;
+  margin-top: 20px;
  }
  
  footer{
