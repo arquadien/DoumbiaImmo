@@ -165,12 +165,11 @@ a:hover {
   font-size: 35px;
 }
 
-#card_of_presentation h1{
+#card_of_presentation h1 {
   font-weight: 900;
   color: #ffffff;
   font-size: 50px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 @media (max-width: 792px) {
@@ -183,12 +182,12 @@ a:hover {
   }
 }
 
-/*about*/
+/* ------------------------------------about..........................*/
 .section-container {
   padding: 30px 0;
-  padding-bottom:90px ;
+  padding-bottom: 90px;
 }
-.section-container-spacer {
+/*.section-container-spacer {
   margin-bottom: 10px;
 }
 .hero-full-container {
@@ -201,21 +200,24 @@ a:hover {
 }
 .hero-container {
   padding: 120px 0 60px;
+}*/
+
+.Abouts {
+  text-align: center;
 }
 
-
-.white-text-container p {
+.Abouts p {
   font-size: 25px;
-  color: #fff;
+  color: #000;
 }
 
-.text-center h2{
+.text-center h2 {
   margin: 20px;
   text-align: center;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.text-center p{
+.text-center p {
   width: 100%;
 }
 
@@ -243,6 +245,7 @@ a:hover {
   width: 400px;
   margin: 0 auto;
   margin-top: -44px;
+  font-size: 35px;
 }
 
 #grille {
@@ -256,7 +259,6 @@ a:hover {
   flex-wrap: wrap;
   margin-bottom: 40px;
 }
-
 
 .grille_items {
   margin-top: 2rem;
@@ -272,8 +274,8 @@ a:hover {
   padding: 4px;
 }
 
-.grille_items p{
-  font-size: 1.6rem;
+.grille_items p {
+  font-size: 1.4rem;
 }
 
 .grille_items:hover {
@@ -287,11 +289,11 @@ a:hover {
 #grille h3 {
   margin: 4px;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.2rem;
 }
 
 .grille_items p {
-  font-size: 52px;
+  font-size: 20px;
 }
 
 #grille button {
@@ -308,58 +310,90 @@ a:hover {
   padding: 8px;
 }
 
-#secend_card p {
-  font-size: 1.6rem;
+.cards:last-child {
+  font-size: 26px;
 }
 
 /* footer*/
 
-
-footer{
+footer {
   min-height: 30vh;
   width: 100;
   background: url(assets/wave-footer.svg);
   padding-top: 20px;
 }
 
-
-.social_link a{
+.social_link a {
   display: inline-flex;
   height: 50px;
   width: 50px;
-  background:rgba(255, 255, 255, 0.863);
+  background: rgba(255, 255, 255, 0.863);
   border-radius: 50%;
   justify-content: center;
   align-items: center;
   text-decoration: none;
   transform: 0.5s;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   margin: 0 10px;
   color: var(--color);
-  -webkit-box-reflect: below 5px linear-gradient(to bottom
-  , rgb(0,0,0,0), rgba(0,0,0,4));
+  -webkit-box-reflect: below 5px
+    linear-gradient(to bottom, rgb(0, 0, 0, 0), rgba(0, 0, 0, 4));
 }
 
 .social_link a:hover {
   background: var(--color);
   color: #eee;
-  box-shadow: 0 0 5px var(--color),
-   0 0 25px var(--color),
-   0 0 50px var(--color),
-   0 0 200px var(--color);
-   transition: 0.6s;
-   text-decoration: none;
- }
+  box-shadow: 0 0 5px var(--color), 0 0 25px var(--color), 0 0 50px var(--color),
+    0 0 200px var(--color);
+  transition: 0.6s;
+  text-decoration: none;
+}
 
- footer section{
+footer section {
   margin: 0 auto;
   width: 300px;
   margin-bottom: 90px;
   margin-top: 20px;
- }
- 
- footer{
+}
+
+footer {
   color: wheat;
-  font-size: 1.9rem;
+  font-size: 20px;
   text-align: center;
- }
+}
+
+/*------------ Catalogue------------*/
+#section-catalogue {
+  padding: 110px 4px 20px 4px;
+}
+
+#section-catalogue h1 {
+  text-align: center;
+  font-size: 34px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+#section-catalogue p {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.catalogue {
+  width: 90%;
+  min-height: 100vh;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px;
+  background: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 490px);
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.catalogue img {
+  min-height: 370px;
+  max-width: 500px;
+}
